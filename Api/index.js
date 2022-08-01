@@ -53,3 +53,5 @@ app.listen(8000, ()=> {
     connect();
     console.log("Connected to backend");
 });
+
+//first scrum done

@@ -3,39 +3,39 @@ const UserSchema = new mongoose.Schema(
   {
     username: {
       type: String,
-      required: false,
-      unique: false,
+      required: true,
+      unique: true,
     },
     email: {
       type: String,
-      required: false,
-      unique: false,
+      required: true,
+      unique: true,
     },
     country: {
       type: String,
-      required: false,
+      required: true,
     },
     img: {
       type: String,
     },
     city: {
       type: String,
-      required: false,
+      required: true,
     },
     phone: {
       type: String,
-      required: false,
+      required: true,
     },
     password: {
       type: String,
-      required: false,
+      required: true,
     },
     isAdmin: {
       type: Boolean,
       default: false,
     },
   },
-  { timestamps: false }
+  { timestamps: true }
 );
 
 export default mongoose.model("User", UserSchema);
